@@ -89,6 +89,10 @@ input[type="button"]:active {
     font-size: 18px;
 }
 
+#igralnoPolje {
+    display: none;
+}
+
 table {
     border-collapse: collapse;
     position: absolute;
