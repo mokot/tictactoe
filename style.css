@@ -14,7 +14,7 @@ body {
     width: 1000px;
     display: block;
     align-items: center;
-    margin-left: 250px;
+    margin-left: 17%;
 }
 
 #mokot {
@@ -41,7 +41,7 @@ body {
 #navodila {
     width: 850px;
     text-align: left;
-    margin-left: 370px;
+    margin-left: 25%;
 }
 
 #navodila span {
@@ -94,7 +94,7 @@ table {
     position: absolute;
     left: 50%;
     top: 12%;
-    margin-left: -268.5px;
+    margin-left: -17%;
 }
 
 td {
