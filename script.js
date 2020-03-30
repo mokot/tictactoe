@@ -29,10 +29,12 @@ var zmagovalneKombinacije = [
     [2, 4, 6]
 ];
 
+var tekst = "Res mislite, da ste pripravljeni igrati igro vašega življenja?\n\nPOZORNO preberite spodnja navodila, saj poti nazaj NI.";
+
 // dolocimo celico (dobimo tabelo)
 var celica = document.querySelectorAll(".celica");
 
-window.alert("Res mislite, da ste pripravljeni igrati igro vašega življenja?\n\nPOZORNO preberite spodnja navodila, saj poti nazaj NI.");
+window.alert(tekst);
 // ko se stran nalozi
 window.addEventListener('load', function() {
 
@@ -40,7 +42,7 @@ window.addEventListener('load', function() {
     document.querySelector(".zmagovalec").style.display = "none";
 
     // na zacetku izpisemo opozorilo o podrobnem branju
-    //window.alert("Res mislite, da ste pripravljeni igrati igro vašega življenja?\n\nPOZORNO preberite spodnja navodila, saj poti nazaj NI.");
+    //window.alert(tekst);
 });
 
 // ko pritisnemo gumb, se igra pricne
