@@ -1,0 +1,103 @@
+<!-- Rok Mokotar (mokot): Tic Tac Toe -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Igra, ki odloča o življenju in smrti, igra imenovana TIC TAC TOE">
+        <meta name="description" content="Malo za vajo, malo za šalo, malo zares.">
+        <meta name="keywords" content="mokot, mokot international, TIC TAC TOE, igra življenja, družabna igra">
+        <meta name="author" content="mokot international">
+        <title>Tic Tac Toe</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <!-- Vnos imena igralcev: -->
+        <zacetek id="zacetekId">
+            <br>
+            <div class="zacetek">
+                <p>Pozdravljeni v najboljši igri vseh časov, <br>
+                IGRI, kateri so se klanjali kralji, hlapci, intelektualci ter bedaki, <br>
+                IGRI, ki je mnoge stala življenja, sreče, ljubezni ter ega, <br>
+                IGRI igrani v novem, srednjem, starem in pa pamtiveku, <br>
+                IGRI ... znani pod imenom <span id="tictactoe">TIC TAC TOE</span>.</p>
+            </div>
+            <br>
+            <div class="zacetek" id="login">
+                <p>Ste se pripravljeni soočiti z NAJVEČJIM izzivom v vašem življenju?<br>
+                Mislite, da ste izkušeni, da veste, kako je biti na dnu?<br>
+                Mislite, da poznate že vse strahove in grozote tega sveta?<br>
+                Mislite, da ste hrabri, močni, sposobni, pametni, zviti?<br><br>
+                No ... če ste vsaj to in še več, potem ste MORDA vredni igrati IGRO, <br>
+                katere imena si mnogi ne upajo izrečt, <br>
+                IGRO imenovano <span id="tictactoe">TIC TAC TOE</span>.</p>
+            </div>
+            <br><br><br>
+            <div class="zacetek" id="navodila">
+                <span>PRAVILA IGRE:</span>
+                    <ol type="I">
+                        <li>za igro sta potrebni DVE osebi,</li>
+                        <li>igralca ne VSEMOGOČNEM igralnem polju predstavljata znaka <span id="znak">O</span> in <span id="znak">X</span>,</li>
+                        <li>igra se KONČA,
+                            <ul>
+                                <li>ko prvi igralec tri lastne znake postavi skupaj, <br></li>ALI
+                                <li>ko na igralnem polju ni več prostega mesta.</li>
+                                </ul>
+                        </li>
+                    </ol>
+            </div>
+            <br><br>
+            <div class="zacetek">
+                <p><span id="pozor">POZOR!</span><br>
+                Eden izmed igralcev lahko izgubi. Poraz, je NEPREDSTAVLJIVA sramota, ne le za samega igralca, ampak za njegove poznane, prijatelje, svojce, ljubljene. <br>
+                VSI bodo sramotno zanamovani s to častno igro, poslano od samega Boga. <br>
+                Zmagovalca pa čaka raj, ljubezen, uspeh, slava, VSE kar si je želel v svojem najglobljem kotičku neuresničenih želja. <br><br><br><br>
+                Kot stvaritelj te spletne IGRE vseh časov, vas še ZADNIJČ OPOZARJAM, da igra ni primerna za mladiče, strahopetce, tepce, <br>
+                AMPAK za elito, za prebivalstvo, ki živi na robu življenja in je drzna, pogumna, sposobna, inteligentna ter pa hkrati nespametna. <br><br><br><br>
+                <span id="konec">SRČNO VAM ŽELIM VELIKO USPEHA, MOJI PLATONSKI PRIJATELJI!</span>
+                </p>
+            </div>
+            <br><br><br><br>
+            <div class="vnosPodatkov zacetek">
+                <label for="imePrvi"><b>Prvi</b> igralec: </label><input type="text" name="imePrvi" id="imePrvi" placeholder="... IME ..." autocomplete="on" required>
+                <label for="imeDrugi"><b>Drugi</b> igralec: </label><input type="text" name="imeDrugi" id="imeDrugi" placeholder="... IME ..." autocomplete="on" required><br><br><br>
+                <input type="button" id="zacetekIgre" value="NAJ SE KONEC PRIČNE" onclick="zacetekIgre()">
+            </div>
+            <br><br>
+            <p id="mokot">&#169; mokot international</p>
+            <br>
+        </zacetek>
+        <!-- Igralno polje: -->
+        <igralnoPolje id="igralnoPolje">
+            <p>Odločitev svojega življenja izbira: <br><span id="naPotezi"></span></p>
+            <table>
+                    <tr class="vrstica">
+                        <td class="celica" id="0"></td>
+                        <td class="celica" id="1"></td>
+                        <td class="celica" id="2"></td>
+                    </tr>
+                    <tr class="vrstica">
+                        <td class="celica" id="3"></td>
+                        <td class="celica" id="4"></td>
+                        <td class="celica" id="5"></td>
+                    </tr>
+                    <tr class="vrstica">
+                        <td class="celica" id="6"></td>
+                        <td class="celica" id="7"></td>
+                        <td class="celica" id="8"></td>
+                    </tr>
+            </table>
+            <p id="mokot2">&#169; mokot international</p>
+        </igralnoPolje>
+        <!-- Zmagovalec -->
+        <konec id="konec">
+            <div class="zmagovalec">
+                Zmagovalec IGRE, katere si večina sploh NE upa zaigrati je:<br><br><span id="zmagovalec"></span><br><br>
+                <!-- Ponovna igra -->
+                <button type="button" id="ponovnaIgra">Ponovna Igra</button>
+            </div>
+        </konec>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
