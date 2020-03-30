@@ -32,6 +32,10 @@ var zmagovalneKombinacije = [
 // dolocimo celico (dobimo tabelo)
 var celica = document.querySelectorAll(".celica");
 
+document.getElementById("igralnoPolje").style.display = "none";
+document.querySelector(".zmagovalec").style.display = "none";
+
+window.alert("Res mislite, da ste pripravljeni igrati igro vašega življenja?\n\nPOZORNO preberite spodnja navodila, saj poti nazaj NI.");
 // ko se stran nalozi
 window.addEventListener('load', function() {
 
@@ -39,7 +43,7 @@ window.addEventListener('load', function() {
     document.querySelector(".zmagovalec").style.display = "none";
 
     // na zacetku izpisemo opozorilo o podrobnem branju
-    window.alert("Res mislite, da ste pripravljeni igrati igro vašega življenja?\n\nPOZORNO preberite spodnja navodila, saj poti nazaj NI.");
+    //window.alert("Res mislite, da ste pripravljeni igrati igro vašega življenja?\n\nPOZORNO preberite spodnja navodila, saj poti nazaj NI.");
 });
 
 // ko pritisnemo gumb, se igra pricne
