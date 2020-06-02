@@ -34,7 +34,7 @@ var tekst = "Res mislite, da ste pripravljeni igrati igro vašega življenja?\n\
 // dolocimo celico (dobimo tabelo)
 var celica = document.querySelectorAll(".celica");
 
-window.alert(tekst);
+// window.alert(tekst);
 // ko se stran nalozi
 window.addEventListener('load', function() {
 
@@ -42,7 +42,7 @@ window.addEventListener('load', function() {
     document.querySelector(".zmagovalec").style.display = "none";
 
     // na zacetku izpisemo opozorilo o podrobnem branju
-    //window.alert(tekst);
+    window.alert(tekst);
 });
 
 // ko pritisnemo gumb, se igra pricne
